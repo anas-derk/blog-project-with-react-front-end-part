@@ -1,0 +1,15 @@
+.login {
+    .login-form {
+        .password-field {
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

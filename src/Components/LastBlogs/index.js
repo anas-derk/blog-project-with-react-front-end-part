@@ -76,7 +76,7 @@ function LastBlogs() {
                 }
                 {errorMessage && !userInfo && <Link
                     to="/login"
-                    class="text-center pb-3 pt-3"
+                    className="text-center pb-3 pt-3"
                     aria-current="page"
                 >
                     تسجيل الدخول

@@ -70,7 +70,7 @@ function LastComments() {
                 </ul>}
                 {last_five_comments_list_Length === 0 && is_get_last_comments_btn_clicked &&
                     <p
-                        classNameName="text-center alert alert-danger pt-3 pb-3 m-0"
+                        className="text-center alert alert-danger pt-3 pb-3 m-0"
                     >
                         {errorMessage}
                     </p>
