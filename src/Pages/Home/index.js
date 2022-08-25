@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Header from "../../Components/Header/index";
 
 function Home({ pageTitle }) {
 
@@ -11,7 +12,7 @@ function Home({ pageTitle }) {
     return (
         // Start Home Page
         <div className="home">
-            <h1>Hello Home Page</h1>
+            <Header />
         </div>
         // End Page Not Found
     );

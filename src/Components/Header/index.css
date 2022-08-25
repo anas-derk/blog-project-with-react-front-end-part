@@ -1,0 +1,17 @@
+.header-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header-section .navbar * a {
+  color: #fff;
+}
+.header-section .navbar .navbar-collapse {
+  margin-right: 20px;
+}
+.header-section .navbar .navbar-collapse .navbar-nav .dropdown-item {
+  text-align: right;
+  color: #000;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,11 @@
+.footer-section {
+  position: relative;
+  top: 100%;
+  background-color: #41464b;
+}
+.footer-section .details-box {
+  border-radius: 3px;
+}
+.footer-section .copyright {
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
