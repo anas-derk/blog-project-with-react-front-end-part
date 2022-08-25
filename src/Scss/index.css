@@ -1,0 +1,17 @@
+* {
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  height: 1000px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */
