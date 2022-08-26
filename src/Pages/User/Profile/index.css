@@ -1,0 +1,24 @@
+.profile .profile-info i {
+  display: block;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .profile .profile-info .info-box {
+    padding-top: 25px;
+  }
+}
+.profile .blogs-count-box {
+  font-size: 25px;
+}
+.profile .my-blogs-list {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.profile .pagination-box span {
+  margin: 0 20px;
+}/*# sourceMappingURL=index.css.map */
