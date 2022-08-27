@@ -1,0 +1,93 @@
+.blog-details {
+    .blog {
+        position: relative;
+
+        .author-img-and-post-date-time-box {
+            i {
+                display: inline-block;
+                width: 75px;
+                height: 75px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 40px;
+                margin-left: 10px;
+
+                @media (max-width: 403px) {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .blog-info {
+            @media (max-width: 991px) {
+                h6 {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .deal-button-with-blog-box {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+
+            @media (max-width: 991px) {
+                top: calc(100% - 48px);
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .go-to-blog-edit-page-btn {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .comments {
+        .comment-details {
+            background-color: #eee;
+            border: 2px dashed var(--two-color);
+            position: relative;
+
+            h6 {
+                border-bottom: 1px solid var(--two-color);
+            }
+
+            .comment-content {
+                @media (max-width: 991px) {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .comment-options-box {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+
+                @media (max-width: 991px) {
+                    top: calc(100% - 48px);
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                i {
+                    border-radius: 50%;
+                    font-size: 15px;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    cursor: pointer;
+
+                    &:first-child {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

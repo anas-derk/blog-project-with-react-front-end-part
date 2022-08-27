@@ -27,7 +27,8 @@ function Profile({ pageTitle }) {
 
     }, []);
 
-    const getBlogsByUserId = () => {
+    const getBlogsByUserId = (e) => {
+        e.preventDefault();
         axios
             .get(
                 `${BASE_API_URL}/api/blogs/user-blogs?userId=${userInfo._id}`

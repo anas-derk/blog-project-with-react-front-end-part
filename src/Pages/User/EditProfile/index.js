@@ -51,7 +51,8 @@ function EditProfile({ pageTitle }) {
 
     }, []);
 
-    const editProfile = () => {
+    const editProfile = (e) => {
+        e.preventDefault();
         setWaitMessage("الرجاء الانتظار قليلاً ريثما يتم التعديل ...");
         axios
             .put(`${BASE_API_URL}/api/users/${userInfo._id}`, {

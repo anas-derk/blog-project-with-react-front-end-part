@@ -28,30 +28,52 @@ function Home({ pageTitle }) {
         setSuccessMessage(successMsg);
 
         setTimeout(() => {
+
             setSuccessMessage("");
+
         }, 6000);
+
         // Get All Blogs If User Is Logged
         if (userInfo) {
+
             getAllBlogs();
+
         } else
+
             setNotUserLoggedError("عذراً لا يمكن عرض التدوينات لأنك لم تقم بتسجيل الدخول ، من فضلك قم بتسجيل الدخول بالضغط على الزر أدناه ...");
+
     }, []);
 
-    const getAllBlogs = () => {
+    const getAllBlogs = (e) => {
+
+        e.preventDefault();
+
         axios
             .get(`${BASE_API_URL}/api/blogs/all-blogs`)
             .then((response) => {
+
                 let tempBlogsList = response.data;
+
                 setBlogListLength(tempBlogsList.length);
+
                 if (blogListLength === 0) {
+
                     setErrorMessage("عذراً لا يوجد تدوينات حالياً ....");
+
                 } else {
+
                     // Programming The Post Date Display Methology For All Blogs
+
                     for (let i = 0; i < blogListLength; i++) {
+
                         let blogPostDate = new Date(blogsList[i].blogPostDate);
+
                         tempBlogsList[i].blogPostDate = `${blogPostDate.toLocaleString()}`;
+                    
                     }
+
                     setBlogsList(tempBlogsList);
+                    
                 };
             })
             .catch((err) => console.log(err));
@@ -80,7 +102,7 @@ function Home({ pageTitle }) {
                     {errorMessage}
                 </p> :
                 // Start All Blogs Section
-                <div className="all-blogs" style={blogListLength > 2 ? { height: '479px', overflowY: 'scroll'}: {}}>
+                <div className="all-blogs" style={blogListLength > 2 ? { height: '479px', overflowY: 'scroll' } : {}}>
                     {/* Start Blog */}
                     {blogsList.map(blogInfo => (
                         <div
@@ -111,8 +133,8 @@ function Home({ pageTitle }) {
                             </div>
                             {/* End Blog Details */}
                         </div >
+                        // End Blog
                     ))}
-                    {/* End Blog */}
                     {/* End All Blogs Section */}
                 </div>
             }
